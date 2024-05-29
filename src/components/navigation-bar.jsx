@@ -6,21 +6,23 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+import { Link } from "react-router-dom";
+
 export default function NavigationBar () {
   return (
     <>
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Manna Shelter</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Manna Shelter</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link as={Link} to="/resources">Resources</Nav.Link>
+            <Nav.Link as={Link} to="/board">Board of Directors</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Contact Us</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="/donate">
               Donate to Us
             </Nav.Link>
           </Nav>
