@@ -22,7 +22,7 @@ export default function NavigationBar () {
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
-            <Nav.Link as={Link} to="/donate">
+            <Nav.Link as={Link} to="/donate" eventKey={2}>
               Donate to Us
             </Nav.Link>
           </Nav>

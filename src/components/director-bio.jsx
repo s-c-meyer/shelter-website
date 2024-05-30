@@ -7,7 +7,7 @@ import Stack from "react-bootstrap/Stack";
 
 export default function DirectorBio ({ director }) {
   return (
-    <Container className="director-bio-card mt-5">
+    <Container className="mt-5">
       <Row className="d-flex">
         <Col md={4}>
           <Image src="https://placehold.co/600x400" alt="placeholder image" width="100%"/>
