@@ -1,5 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 
+$nav-color: #f1e9dc;
+$bg-color: #f8f2ea;
+$bg-2-color: #fbf8f5;
+
 .barlow-thin {
   font-family: "Barlow", sans-serif;
   font-weight: 100;
@@ -108,14 +112,55 @@
   font-style: italic;
 }
 
+.root-class {
+  background-color: $bg-color;
+}
+
 .index-text {
   @extend .barlow-medium;
   font-size: 2.5rem;
   text-align: center;
 }
 
+.index-text-title {
+  @extend .barlow-bold;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.mission-container {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $bg-2-color;
+}
+
+.value-text {
+  @extend .barlow-medium;
+  font-size: 2.5rem;
+  align-content: end;
+}
+
+.value-text-title {
+  @extend .barlow-bold;
+  font-size: 8rem;
+  align-content: end;
+}
+
+.value-subtext {
+  @extend .barlow-regular;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .director-name {
   font-size: larger;
+}
+
+.navbar {
+  background-color: $nav-color;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .border-line {
@@ -172,5 +217,34 @@
   &:hover {
     text-shadow: 1px 2px 30px purple;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .index-text {
+    font-size: 1.5rem;
+  }
+
+  .index-text-title {
+    font-size: 4rem;
+  }
+
+  .value-container {
+    margin-left: 4rem;
+  }
+}
+
+.value-row {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .value-row {
+    transition: opacity 2s ease, transorm 2s ease
+  }
+}
+
+.value-row-transition {
+  opacity: 1;
+  transform: none;
 }
 

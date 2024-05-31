@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default function NavigationBar () {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="">
+      <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container className='barlow-regular'>
         <Navbar.Brand as={Link} to="/">Manna Shelter</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
