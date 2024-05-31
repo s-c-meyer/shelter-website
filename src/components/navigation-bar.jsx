@@ -18,7 +18,7 @@ export default function NavigationBar () {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/resources">Resources</Nav.Link>
-            <Nav.Link as={Link} to="/board">Board of Directors</Nav.Link>
+            <Nav.Link className='nav-link' as={Link} to="/board">Board of Directors</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>

@@ -112,6 +112,17 @@ $bg-2-color: #fbf8f5;
   font-style: italic;
 }
 
+.nav-link {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s;
+
+  &:hover {
+    text-decoration-color: black;
+  }
+}
+
 .root-class {
   background-color: $bg-color;
 }
@@ -132,6 +143,9 @@ $bg-2-color: #fbf8f5;
   margin-top: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.value-container {
   background-color: $bg-2-color;
 }
 
@@ -208,11 +222,12 @@ $bg-2-color: #fbf8f5;
   font-size: x-large;
   // text-align: center;
 }
+
 .contact-text-flair {
   text-shadow: 1px 2px 10px purple;
   text-decoration: none;
   color: inherit;
-  transition: 0.3s;
+  transition: 0.5s;
 
   &:hover {
     text-shadow: 1px 2px 30px purple;

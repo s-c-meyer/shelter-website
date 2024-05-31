@@ -50,7 +50,7 @@ export default function Index() {
         </Row>
 
         {/* This is a Row for the Values, S E R V E */}
-        <Row>
+        <Row className="value-container">
           <Col>
             {/* Stack containing all of the Values */}
             <Stack gap={5}> 
@@ -59,10 +59,10 @@ export default function Index() {
                 <Col xs={12} lg={7}>
                   <Stack gap={3}>
                     <div className="value-subtext">
-                      Serving the community, clients, and each other by following Christ's example of Servant-Leadership
+                      Serving the community, clients, and each other by following Christ&apos;s example of Servant-Leadership
                     </div>
                     <div className="value-subtext">
-                      "<span className="barlow-regular-italic">Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain</span>" - 1 Corinthians 15:58 
+                      &quot;<span className="barlow-regular-italic">Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain</span>&quot; - 1 Corinthians 15:58 
                     </div>
                   </Stack>
                 </Col>
@@ -75,7 +75,7 @@ export default function Index() {
                       We will make sure to invest in you and ourselves spiritual, personal, and professional empowerment for a successful HOLY living
                     </div>
                     <div className="value-subtext">
-                      "<span className="barlow-regular-italic">He gives power to the weak and strength to the powerless!</span>" - Isaiah 40:29 
+                      &quot;<span className="barlow-regular-italic">He gives power to the weak and strength to the powerless!</span>&quot; - Isaiah 40:29 
                     </div>
                   </Stack>
                 </Col>
@@ -88,7 +88,7 @@ export default function Index() {
                       Letting God repair your life with the Holy essentials you need for a better productive Christian life
                     </div>
                     <div className="value-subtext">
-                      "<span className="barlow-regular-italic">Return to your fortress, you prisoners of hope; even now I announce that I will restore twice as much to you.</span>" - Zechariah 9:12 
+                      &quot;<span className="barlow-regular-italic">Return to your fortress, you prisoners of hope; even now I announce that I will restore twice as much to you.</span>&quot; - Zechariah 9:12 
                     </div>
                   </Stack>
                 </Col>
@@ -101,7 +101,7 @@ export default function Index() {
                       Letting God show us the value and price he has paid for our life, that the power he has used to save us from sin, we also have power to overcome every trial or tribulation that comes in your life
                     </div>
                     <div className="value-subtext">
-                      "<span className="barlow-regular-italic">He gives power to the weak and strength to the powerless!</span>" - Isaiah 40:29 
+                      &quot;<span className="barlow-regular-italic">He gives power to the weak and strength to the powerless!</span>&quot; - Isaiah 40:29 
                     </div>
                   </Stack>
                 </Col>
@@ -114,7 +114,7 @@ export default function Index() {
                       We will power you and ourselves everyday with the powerful word of God so you will be able to use the living word when you need it over circumstances
                     </div>
                     <div className="value-subtext">
-                    "<span className="barlow-regular-italic">For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart</span>" - Hebrews 4:12 
+                      &quot;<span className="barlow-regular-italic">For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart</span>&quot; - Hebrews 4:12 
                     </div>
                   </Stack>
                 </Col>

@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Image from "react-bootstrap/Image";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import { useEffect, useState } from "react";
