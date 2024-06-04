@@ -7,6 +7,7 @@ import Board from "./board-of-directors";
 import Contact from "./contact-page";
 import Donate from "./donate-page";
 import Gallery from "./gallery-page";
+import Footer from "./footer";
 
 
 export default function MainView () {
@@ -42,6 +43,7 @@ export default function MainView () {
             />
           </Routes>
         </Row>
+        <Footer />
       </BrowserRouter>
     </>
   )

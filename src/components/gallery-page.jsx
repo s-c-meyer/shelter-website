@@ -1,9 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
-import Ratio from "react-bootstrap/Ratio";
 import Stack from "react-bootstrap/Stack";
 
 export default function Gallery () {

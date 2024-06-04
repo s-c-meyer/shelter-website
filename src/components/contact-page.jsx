@@ -81,7 +81,7 @@ export default function Contact () {
 
         {/* Contact Form */}
         <Row className="mt-5 d-flex justify-content-center">
-          <Col xs={12} lg={9} className="mt-4">
+          <Col xs={12} lg={9} className="mt-4 mb-5">
             <Form id="ContactForm">
               <FloatingLabel
                 controlId="floatingName"
