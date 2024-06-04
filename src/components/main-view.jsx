@@ -6,6 +6,7 @@ import Index from ".";
 import Board from "./board-of-directors";
 import Contact from "./contact-page";
 import Donate from "./donate-page";
+import Gallery from "./gallery-page";
 
 
 export default function MainView () {
@@ -34,6 +35,10 @@ export default function MainView () {
             <Route 
               path="/donate"
               element={<Donate />}
+            />
+            <Route
+              path="/gallery"
+              element={<Gallery />}
             />
           </Routes>
         </Row>

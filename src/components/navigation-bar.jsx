@@ -13,12 +13,19 @@ export default function NavigationBar () {
     <>
       <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container className='barlow-regular'>
-        <Navbar.Brand as={Link} to="/">Manna Shelter</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            src='../src/assets/navbar_logo.png'
+            alt='Manna Shelter Logo'
+            className='d-inline-block align-top'
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/resources">Resources</Nav.Link>
             <Nav.Link className='nav-link' as={Link} to="/board">Board of Directors</Nav.Link>
+            <Nav.Link className='nav-link' as={Link} to="/gallery">Gallery</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>

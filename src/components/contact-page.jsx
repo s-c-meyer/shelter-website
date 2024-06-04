@@ -34,7 +34,7 @@ export default function Contact () {
   return (
     <>
       <Container className="mt-5">
-        <Row className="d-flex justify-content-center mb-5">
+        <Row className="d-flex justify-content-center my-5">
           <Col xs={9} lg={7} className="mb-5 mb-lg-0">
             <Stack className="align-items-center justify-content-center mt-4" gap={5}>
               {/* <div className="barlow-regular">
@@ -81,7 +81,7 @@ export default function Contact () {
 
         {/* Contact Form */}
         <Row className="mt-5 d-flex justify-content-center">
-          <Col xs={9} className="mt-4">
+          <Col xs={12} lg={9} className="mt-4">
             <Form id="ContactForm">
               <FloatingLabel
                 controlId="floatingName"
@@ -105,7 +105,7 @@ export default function Contact () {
                 <Form.Select aria-label="Select Reason for Contacting" value={selectValue} onChange={(e) => setSelectValue(e.target.value)}>
                   <option value="LearnMore">Learn more about Manna Shelter</option>
                   <option value="Volunteer">I would like to learn more about volunteering with Manna Shelter</option>
-                  <option value="BoardMember">I would like to learn more about being a member of Manna Shelter's board</option>
+                  <option value="BoardMember">I would like to learn more about being a member of Manna Shelter&apos;s board</option>
                 </Form.Select>
               </FloatingLabel>
               <FloatingLabel

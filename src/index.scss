@@ -112,11 +112,18 @@ $bg-2-color: #fbf8f5;
   font-style: italic;
 }
 
+.navbar {
+  background-color: $nav-color;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
 .nav-link {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: transparent;
   transition: text-decoration-color 0.2s;
+  font-size: large;
 
   &:hover {
     text-decoration-color: black;
@@ -161,6 +168,25 @@ $bg-2-color: #fbf8f5;
   align-content: end;
 }
 
+.value-subtext-container {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 80%; 
+    height: 80%; 
+    background-image: url(./assets/BrushStroke1.png);
+    background-repeat: no-repeat;
+    // background-size: cover;
+    z-index: 0;
+    opacity: .2;
+  }
+}
+
 .value-subtext {
   @extend .barlow-regular;
   font-size: 1.25rem;
@@ -169,12 +195,6 @@ $bg-2-color: #fbf8f5;
 
 .director-name {
   font-size: larger;
-}
-
-.navbar {
-  background-color: $nav-color;
-  margin-left: -12px;
-  margin-right: -12px;
 }
 
 .border-line {
@@ -201,6 +221,7 @@ $bg-2-color: #fbf8f5;
     height: auto; // Maintains the aspect ratio
     position: relative;
     z-index: 1;
+    border-radius: 5%;
   }
 
   &::before {
@@ -210,7 +231,7 @@ $bg-2-color: #fbf8f5;
       left: 50%;
       width: 104%; 
       height: 108%; 
-      background-color: purple; 
+      background-color: #800080; 
       transform: translate(-50%, -50%) rotate(9deg); 
       z-index: 0;
       opacity: .4;
@@ -234,6 +255,33 @@ $bg-2-color: #fbf8f5;
   }
 }
 
+.gallery-img {
+  width: 100%;
+}
+
+.gallery-title {
+  @extend .barlow-bold;
+  font-size: x-large;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.gallery-subtext {
+  @extend .barlow-light;
+  font-size: large;
+  text-align: center;
+}
+
+.gallery-title-option2 {
+  @extend .barlow-bold;
+  font-size: xx-large;
+}
+
+.gallery-subtext-option2 {
+  @extend .barlow-light;
+  font-size: large;
+}
+
 @media only screen and (max-width: 992px) {
   .index-text {
     font-size: 1.5rem;
@@ -243,7 +291,7 @@ $bg-2-color: #fbf8f5;
     font-size: 4rem;
   }
 
-  .value-container {
+  .value-title {
     margin-left: 4rem;
   }
 }
@@ -254,7 +302,8 @@ $bg-2-color: #fbf8f5;
 
 @media (prefers-reduced-motion: no-preference) {
   .value-row {
-    transition: opacity 2s ease, transorm 2s ease
+    transition: opacity 2s ease, transorm 2s ease;
+    transition-delay: .3s;
   }
 }
 
@@ -262,4 +311,5 @@ $bg-2-color: #fbf8f5;
   opacity: 1;
   transform: none;
 }
+
 

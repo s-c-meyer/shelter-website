@@ -26,9 +26,9 @@ export default function Index() {
       <Container className="my-5">
         <Row className="d-flex mb-5 mx-3">
           <Col xl={4} lg={12} className="d-flex justify-content-center px-3">
-            <Image src="../src/assets/Manna_Shelter_Logo.jpg" rounded alt="Manna Shelter Logo" width="100%" />
+            <Image style={{ maxWidth: "35rem" }} src="../src/assets/Manna_Shelter_Logo.jpg" rounded alt="Manna Shelter Logo" width="100%" />
           </Col>
-          <Col xl={8} lg={12} className="d-flex flex-wrap justify-items-center align-content-center index-text px-5">
+          <Col xl={8} lg={12} className="d-flex flex-wrap justify-items-center align-content-center index-text px-5 mt-4 mt-xl-0">
             Manna Shelter is a non-profit organization that provides transitional housing for those who are homeless, day care for teen mothers in school and working adults, family and individual therapy, and financial counseling.
           </Col>
         </Row>
@@ -50,12 +50,12 @@ export default function Index() {
         </Row>
 
         {/* This is a Row for the Values, S E R V E */}
-        <Row className="value-container">
+        <Row className="pt-2 pt-lg-5 value-container">
           <Col>
             {/* Stack containing all of the Values */}
             <Stack gap={5}> 
-              <Row className="d-flex barlow-regular align-items-center justify-content-center value-row">
-                <Col xs={12} lg={3} className=" value-container"><span className="value-text-title">S</span><span className="value-text">erving</span></Col>
+              <Row className="d-flex barlow-regular align-items-center justify-content-center value-row value-subtext-container">
+                <Col xs={12} lg={3} className="value-title"><span className="value-text-title">S</span><span className="value-text">erving</span></Col>
                 <Col xs={12} lg={7}>
                   <Stack gap={3}>
                     <div className="value-subtext">
@@ -68,7 +68,7 @@ export default function Index() {
                 </Col>
               </Row>
               <Row className="d-flex barlow-regular align-items-center justify-content-center value-row">
-                <Col xs={12} lg={3} className=" value-container"><span className="value-text-title">E</span><span className="value-text">nable</span></Col>
+                <Col xs={12} lg={3} className=" value-title"><span className="value-text-title">E</span><span className="value-text">nable</span></Col>
                 <Col xs={12} lg={7}>
                   <Stack gap={3}>
                     <div className="value-subtext">
@@ -81,7 +81,7 @@ export default function Index() {
                 </Col>
               </Row>
               <Row className="d-flex barlow-regular align-items-center justify-content-center value-row">
-                <Col xs={12} lg={3} className=" value-container"><span className="value-text-title">R</span><span className="value-text">epair</span></Col>
+                <Col xs={12} lg={3} className="value-title"><span className="value-text-title">R</span><span className="value-text">epair</span></Col>
                 <Col xs={12} lg={7}>
                   <Stack gap={3}>
                     <div className="value-subtext">
@@ -94,7 +94,7 @@ export default function Index() {
                 </Col>
               </Row>
               <Row className="d-flex barlow-regular align-items-center justify-content-center value-row">
-                <Col xs={12} lg={3} className=" value-container"><span className="value-text-title">V</span><span className="value-text">alue</span></Col>
+                <Col xs={12} lg={3} className="value-title"><span className="value-text-title">V</span><span className="value-text">alue</span></Col>
                 <Col xs={12} lg={7}>
                   <Stack gap={3}>
                     <div className="value-subtext">
@@ -107,7 +107,7 @@ export default function Index() {
                 </Col>
               </Row>
               <Row className="d-flex barlow-regular align-items-center justify-content-center value-row">
-                <Col xs={12} lg={4} className=" value-container"><span className="value-text-title">E</span><span className="value-text">mpowerment</span></Col>
+                <Col xs={12} lg={4} className="value-title"><span className="value-text-title">E</span><span className="value-text">mpowerment</span></Col>
                 <Col xs={12} lg={6}>
                   <Stack gap={3}>
                     <div className="value-subtext">

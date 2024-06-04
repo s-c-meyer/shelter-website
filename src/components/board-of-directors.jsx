@@ -11,7 +11,7 @@ export default function Board () {
 
   return (
     <>
-      <Container className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center mt-4">
         <Row className="d-flex justify-content-center">
           <Col xs={12} sm={11}>
             <DirectorBio director={director} />
