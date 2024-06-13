@@ -33,22 +33,10 @@ export default function Contact () {
 
   return (
     <>
-      <Container className="mt-5">
+      <Container className="my-5">
         <Row className="d-flex justify-content-center my-5">
           <Col xs={9} lg={7} className="mb-5 mb-lg-0">
             <Stack className="align-items-center justify-content-center mt-4" gap={5}>
-              {/* <div className="barlow-regular">
-                <img src="../src/assets/info-icon.png" width="128px" />
-                <span className="ms-4 contact-text">Interested in learning more about <span className="contact-text-flair">Manna Shelter</span>?</span>
-              </div> */}
-              {/* <div className="barlow-regular">
-                <img src="../src/assets/volunteer-icon.png" width="128px" />
-                <span className="ms-4 contact-text">Interested in <span className="contact-text-flair">Volunteering</span> your time or talents?</span>
-              </div>
-              <div className="barlow-regular">
-                <img src="../src/assets/board-member-icon.png" width="128px" />
-                <span className="ms-4 contact-text">Do you want to join our <span className="contact-text-flair">Board of Directors</span>?</span>
-              </div> */}
               <Row className="d-flex barlow-regular align-items-center">
                 <Col xs={12} lg={2} className="d-flex justify-content-center"><img src="../src/assets/info-icon.png" width="128px" /></Col>
                 <Col xs={12} lg={10} className="d-flex justify-content-center mt-3 mt-lg-0">
@@ -74,7 +62,7 @@ export default function Contact () {
 
         <Row className="d-flex justify-content-center">
           <hr className="border-line mb-5" />
-          <Col xs={9} className="mt-5 barlow-bold d-flex justify-content-center">
+          <Col id="ContactForm" xs={9} className="mt-5 barlow-bold d-flex justify-content-center">
             <h1>We look forward to hearing from you!</h1>
           </Col>
         </Row>
@@ -82,7 +70,7 @@ export default function Contact () {
         {/* Contact Form */}
         <Row className="mt-5 d-flex justify-content-center">
           <Col xs={12} lg={9} className="mt-4 mb-5">
-            <Form id="ContactForm">
+            <Form>
               <FloatingLabel
                 controlId="floatingName"
                 label="Name"
@@ -129,7 +117,8 @@ export default function Contact () {
                   {isLoading ? "Submitting..." : "Click to Submit"}
                 </Button>
 
-                {/* add an alert here? One that says it was successfully submitted and that we will get back to them ASAP */}
+                {/* add an alert here? One that says it was successfully submitted and that we will get back to them ASAP.
+                Could also use a modal instead to pop up and make it more obvious */}
               </div>
             </Form>
           </Col>

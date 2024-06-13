@@ -287,8 +287,14 @@ $footer-color: #80008096;
   font-size: large;
 }
 
+.bldg-img {
+  width: 100%;
+}
+
 .footer-container {
-  background-color: $footer-color;
+  background-color: $footer-color; //for browsers that do not support gradients
+  background-image: linear-gradient(90deg, darken($footer-color, 5%), lighten($footer-color, 5%));
+  opacity: 0.8;
 }
 
 .footer-text {
@@ -326,6 +332,16 @@ $footer-color: #80008096;
 
   .value-title {
     margin-left: 4rem;
+  }
+}
+
+.nav-logo {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-logo-container {
+    width: 200px;
   }
 }
 

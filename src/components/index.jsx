@@ -24,11 +24,11 @@ export default function Index() {
   return (
     <>
       <Container className="my-5">
-        <Row className="d-flex mb-5 mx-3">
+        <Row className="d-flex justify-content-center mb-5 mt-5 mx-3">
           <Col xl={4} lg={12} className="d-flex justify-content-center px-3">
             <Image style={{ maxWidth: "35rem" }} src="../src/assets/Manna_Shelter_Logo.jpg" rounded alt="Manna Shelter Logo" width="100%" />
           </Col>
-          <Col xl={8} lg={12} className="d-flex flex-wrap justify-items-center align-content-center index-text px-5 mt-4 mt-xl-0">
+          <Col xl={7} lg={12} className="d-flex flex-wrap justify-items-center align-content-center index-text px-5 mt-4 mt-xl-0">
             Manna Shelter is a non-profit organization that provides transitional housing for those who are homeless, day care for teen mothers in school and working adults, family and individual therapy, and financial counseling.
           </Col>
         </Row>

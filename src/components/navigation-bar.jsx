@@ -13,11 +13,11 @@ export default function NavigationBar () {
     <>
       <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container className='barlow-regular'>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand className='nav-logo-container' as={Link} to="/">
           <img
             src='../src/assets/navbar_logo.png'
             alt='Manna Shelter Logo'
-            className='d-inline-block align-top'
+            className='d-flex nav-logo'
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -20,9 +20,11 @@ export default function Footer () {
         </Row>
         <Row className="footer-container pt-5">
           <Col xs={12} className="d-flex justify-content-center">
-            <button className="footer-btn">
-              <i className="bi bi-facebook" style={{ fontSize: "2rem" }}></i>
-            </button>
+            <a href="https://www.facebook.com/profile.php?id=61558994361378" target="_blank">
+              <button role="link" className="footer-btn">
+                <i className="bi bi-facebook" style={{ fontSize: "2rem" }}></i>
+              </button>
+            </a>
             <button className="footer-btn">
               <i className="bi bi-telephone-inbound-fill" style={{ fontSize: "2rem" }}></i>
             </button>

@@ -32,6 +32,17 @@ export default function Gallery () {
             </Stack>
           </Col>
         </Row>
+        <Row className="d-flex justify-content-center mb-5">
+          <Col xs={12} style={{ padding: "0" }} className="d-flex justify-content-center mb-5">
+            <Image src="../src/assets/building-render.png" alt="Render of future Manna Shelter Building" fluid className="bldg-img"/>
+          </Col>
+          <Col xs={12} lg={4} style={{ fontSize: "2rem" }} className="barlow-bold">
+            Manna Shelter Building Render
+          </Col>
+          <Col xs={12} lg={6} className="contact-text">
+            This is a render of the future home of Manna Shelter, made possible because of your <span><a className="contact-text-flair" href="/donate">donations</a></span>!
+          </Col>
+        </Row>
       </Container>
     </>
   )
